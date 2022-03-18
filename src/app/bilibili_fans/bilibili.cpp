@@ -7,8 +7,8 @@ struct BilibiliAppRunData
 {
     unsigned int fans_num;
     unsigned int follow_num;
-    unsigned int refresh_status;
-    unsigned long refresh_interval;
+    unsigned int refresh_status;//刷新状态
+    unsigned long refresh_interval;//刷新间隔
     unsigned long refresh_time_millis;
 };
 

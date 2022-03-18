@@ -1,6 +1,5 @@
 #include "bluetooth.h"
 #include "common.h"
-#include "BT.h"
 #include "bluetooth_gui.h"
 #include "sys/app_controller.h"
 

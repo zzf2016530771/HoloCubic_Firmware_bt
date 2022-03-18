@@ -3,9 +3,10 @@
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
-
+#include <String.h>
 #include <BLE2902.h>
 
+using namespace std;
 // extern void destroy_ble();
 // extern BLECharacteristic *pChar_pedo;
 // extern BLECharacteristic *pChar_target;
@@ -20,7 +21,7 @@ class BLE
 {
 public:
     BLE();
-    void init_ble(String ble_name);
+    void init_ble();
 private:
     unsigned long m_preDisBLEConnInfoMillis;
 };

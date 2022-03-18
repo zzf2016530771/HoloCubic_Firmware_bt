@@ -2,6 +2,7 @@
 #include "BT.h"
 #include "HardwareSerial.h"
 
+
 #define BLE_NAME "BLE-esp32"
 #define SERVICE_UUID "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
 #define CHARACTERISTIC_UUID "6E400002-B5A3-F393-E0A9-E50E24DCCA9E"
@@ -44,9 +45,10 @@ BLE::BLE()
     m_preDisBLEConnInfoMillis = 0;
 }
 
-void BLE::init_ble(String ble_name)
+void BLE::init_ble()
 {
-    String name = ble_name.c_str();
+    //const char *name = ble_name.c_str();
+    BLEDevice::init("ESP32_BLE");
 
     pServer=BLEDevice::createServer();
     pService=pServer->createService(SERVICE_UUID);

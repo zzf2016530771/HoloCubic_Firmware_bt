@@ -261,7 +261,7 @@ bool AppController::ble_event(APP_EVENT_TYPE type)
         {
             if(false == m_ble_status)
             {
-                g_ble.init_ble("ESP32-BLE");
+                g_ble.init_ble();
 
                 m_ble_status=true;
             }
