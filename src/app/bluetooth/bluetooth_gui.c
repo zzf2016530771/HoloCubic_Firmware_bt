@@ -28,9 +28,9 @@ void bluetooth_gui_init(void)
     lv_obj_add_style(blurtooth_gui,LV_BTN_PART_MAIN,&default_style);//将创建的新样式添加到对象的样式列表
 
     lv_style_init(&b_lable_stytle);
-    lv_style_set_bg_opa(&b_lable_stytle,LV_STATE_DEFAULT,LV_OPA_COVER);
-    lv_style_set_bg_color(&b_lable_stytle,LV_STATE_DEFAULT,LV_COLOR_WHITE);
-    lv_style_set_bg_font(&b_lable_stytle,LV_STATE_DEFAULT,&lv_font_montserrat_24);
+    lv_style_set_text_opa(&b_lable_stytle,LV_STATE_DEFAULT,LV_OPA_COVER);
+    lv_style_set_text_color(&b_lable_stytle,LV_STATE_DEFAULT,LV_COLOR_WHITE);
+    lv_style_set_text_font(&b_lable_stytle,LV_STATE_DEFAULT,&lv_font_montserrat_24);
 
 }
 
